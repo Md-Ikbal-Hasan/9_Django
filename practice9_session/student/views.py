@@ -4,6 +4,7 @@ from django.shortcuts import render
 # Create your views here.
 def setsession(request):
     request.session['name'] = 'Ikbal'
+    request.session['lname'] = 'Hosen'
     return render(request,'student/setsession.html')
 
 
@@ -11,13 +12,17 @@ def setsession(request):
 def getsession(request):
     #name = request.session['name'] 
     name = request.session.get('name')
-    return render(request,'student/getsession.html',{'name':name})
+    keys = request.session.keys()
+    items = request.session.items()
+    #age = request.session.setdefault('age','23')
+    return render(request,'student/getsession.html',{'name':name, 'keys':keys,'items':items})
 
 
 
 def delsession(request):
-    if 'name' in request.session:
-        del request.session['name']
+    #if 'name' in request.session:
+        #del request.session['name']
+    request.session.flush() # the session will be deleted
     return render(request,'student/delsession.html')
 
 

@@ -9,9 +9,29 @@
 <body>
 
     <h4>Session Get....</h4>
-    <h5> {{name}} {{lname}} </h5>
+     {{name}} <hr>
+
+
+    {% for key in keys %}
+        {{key}}
+    {%endfor%} <hr>
+    <br>
+
+
+    {% for item in items %}
+    {{item}}
+    {%endfor%} <hr>
+
+
+    {% for key,value in items %}
+    {{key}}  {{value}} <br>
+    {%endfor%} <hr>
+
+
+    {{age}}
+
     
-    
+
     
 </body>
 </html>
