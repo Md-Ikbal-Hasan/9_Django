@@ -1,4 +1,4 @@
-"""practice9_cookies URL Configuration
+"""practice9_session URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -18,5 +18,7 @@ from django.urls import path
 from student import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('set/',views.setcookie),
+    path('set/',views.setsession),
+    path('get/',views.getsession),
+    path('del/',views.delsession),
 ]

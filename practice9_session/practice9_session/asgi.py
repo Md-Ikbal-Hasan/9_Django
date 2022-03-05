@@ -1,5 +1,5 @@
 """
-ASGI config for practice9_cookies project.
+ASGI config for practice9_session project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'practice9_cookies.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'practice9_session.settings')
 
 application = get_asgi_application()
