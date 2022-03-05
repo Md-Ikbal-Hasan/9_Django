@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% block homeactive %} active{% endblock homeactive %}
+{% block body %}
+
+<div class="container-fluid mt-0 px-0">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://source.unsplash.com/1900x500/?code,technology,nasa" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1900x500/?programmer,css" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1900x500/?python,code,technology" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+</div>
+
+<div class="container my-4">
+    <h2 class="text-center my-2">Why Choose us</h2>
+    <div class="row">
+
+        <div class="col-md-4 ">
+            <div class="text-center">
+                <img src="https://source.unsplash.com/160x160/?code,html,css,java,kotlin" class="rounded"
+                    alt="loading...">
+                <div class="my-4">
+                    <h4>Coding Article</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga non nulla quisquam maiores
+                        doloribus,
+                        veniam minus explicabo provident nisi ducimus.
+                        Necessitatibus vitae eos itaque voluptate quod doloribus quisquam, reprehenderit praesentium?
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-4 ">
+            <div class="text-center">
+                <img src="https://source.unsplash.com/160x160/?forest,river,inspiration,strength,happinies"
+                    class="rounded" alt="loading...">
+                <div class="my-4">
+                    <h4>Inspirational Article</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga non nulla quisquam maiores
+                        doloribus,
+                        veniam minus explicabo provident nisi ducimus.
+                        Necessitatibus vitae eos itaque voluptate quod doloribus quisquam, reprehenderit praesentium?
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-md-4 ">
+            <div class="text-center">
+                <img src="https://source.unsplash.com/160x160/?islam,makka,madhina,mosque" class="rounded"
+                    alt="loading...">
+                <div class="my-4">
+                    <h4>Islamic Article</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga non nulla quisquam maiores
+                        doloribus,
+                        veniam minus explicabo provident nisi ducimus.
+                        Necessitatibus vitae eos itaque voluptate quod doloribus quisquam, reprehenderit praesentium?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+{% endblock body %}

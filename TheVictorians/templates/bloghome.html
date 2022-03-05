@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block blogactive %}active {% endblock blogactive %}
+
+
+{% block body %}
+<h1 class="my-3 text-center"> Welcome to The Vicotorians Blog</h1>
+
+
+<div class="container">
+    {% for blog in blogs %}
+    <div class="media my-4">
+        <h3 class="text-dark"> <a href="/blogpost/{{blog.slug}} " class="text-dark text-decoration-none"> {{blog.title}}
+            </a> </h3>
+        <div class="my-2">
+            {{blog.content | slice:245}}.....
+        </div>
+
+        <a href="/blogpost/{{blog.slug}}" class="text-dark"> <button class="btn btn-primary"> Read More...</button> </a>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+{% endblock body %}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %} Other {% endblock title %} </title>
+</head>
+<body>
+   
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Django Course</li>
+        </ul>
+    </nav>
+  
+
+    {%block content%}  {% endblock content %}
+
+    {%block content1%} content1  {% endblock content1 %}
+    {%block content2%} content2 {% endblock content2 %}
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% extends 'enroll/base.html' %} {% block content %}
+
+<div class="row">
+    <div class="col">
+        <h5 class="text-center alert alert-info">Update Student</h5>
+        <form action="" method="POST">
+            {% csrf_token %} {{form.as_p}} {% if success_text %}
+            <div class="alert alert-success alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button> {{success_text}}
+            </div>
+            {% endif %}
+
+            <input type="submit" name="submit" class="btn btn-success" , value="Update">
+            <a href="{%  url 'addandshow' %}" class="btn btn-primary">Back To Home</a>
+        </form>
+    </div>
+</div>
+
+
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends 'studentapp/base.html' %} {% block body_block %}
+
+<h1 class="text-center my-3">Password Change</h1>
+
+<form action="" method="POST">
+
+
+    {% csrf_token %} {% for fm in form %} {{fm.label_tag}} {{fm}} {{fm.errors|striptags}} <br> {% endfor %}
+    <input type="submit" value="Save" class="btn btn-success btn-sm">
+</form> <br>
+
+
+
+
+
+
+<br> {% endblock body_block %}

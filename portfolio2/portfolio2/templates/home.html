@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block homeactive %}active{% endblock homeactive %}
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+
+
+<!--this is slide show(caraosal) that has 3 picture-->
+<div class="container-fluid mt-0 px-0">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/images/slider1.jpg" class="d-block w-100 h-30" alt="..." style="height:700px;">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/images/slider2.jpg" class="d-block w-100" alt="..." style="height:700px;">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/images/slider3.jpg" class="d-block w-100" alt="..." style="height:700px;">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+
+
+<!--this is card-->
+<div class="container my-3">
+  <h2 class="text-center my-3 py-3">Me at a glance</h2>
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/500x300/?code,php,icpc,C++" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Coder</h5>
+          <p class="card-text">I am a coder and I have solved many code in various online judge. If you want to see my
+            code
+            that I have solved just click the link
+          </p>
+          <a href="https://github.com/Md-Ikbal-Hasan/ALL_Code" class="btn btn-primary">Code's Link</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/500x300/?code,html,django,css" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Developer</h5>
+          <p class="card-text">I have developed some applicatiopn like Web application, Android application, Desktop
+            application,
+            sql project etc.If you are interested to see my project just click the Link Button.</p>
+          <a href="https://github.com/Md-Ikbal-Hasan/OnlineRentAdvertisementSystem" class="btn btn-primary">Projects
+            Links</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/500x300/?nature,green,forest" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Photographer</h5>
+          <p class="card-text">I love to take photo of beautiful nature view.It's one of my favourite
+            hobby. Click the button to see my photography
+          </p>
+          <a href="#" class="btn btn-primary">Photo Gallary</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+{% endblock body %}
