@@ -4,18 +4,18 @@ from django.shortcuts import render
 # Create your views here.
 def setsession(request):
     request.session['name'] = 'Ikbal'
-    request.session['lname'] = 'Hosen'
+    #request.session['lname'] = 'Hosen'
     return render(request,'student/setsession.html')
 
 
 
 def getsession(request):
     #name = request.session['name'] 
-    name = request.session.get('name')
-    keys = request.session.keys()
-    items = request.session.items()
+    name = request.session['name']
+    #keys = request.session.keys()
+    #items = request.session.items()
     #age = request.session.setdefault('age','23')
-    return render(request,'student/getsession.html',{'name':name, 'keys':keys,'items':items})
+    return render(request,'student/getsession.html',{'name':name})
 
 
 

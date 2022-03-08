@@ -20,5 +20,7 @@ from home import views
 urlpatterns = [
     path('', views.home, name='home'),
     path('tasks/', views.tasks, name='tasks'),
-    path('contact/',views.contact, name="contact")  
+    path('deletetask/<int:id>', views.delete_task, name='deletetask'),
+    path('updatetask/<int:id>', views.update_task, name='updatetask'),
+    path('contact/',views.contact, name="contact") ,
 ]

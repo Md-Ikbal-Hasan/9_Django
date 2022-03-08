@@ -1,4 +1,5 @@
 <!doctype html>
+{% load static %}
 <html lang="en">
 
 <head>
@@ -51,6 +52,7 @@
           <th scope="col">Serial No.</th>
           <th scope="col">Task Title</th>
           <th scope="col">Task Description</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
@@ -61,6 +63,10 @@
           <th scope="row">{{forloop.counter }}</th>
           <td>{{task.taskTitle}}</td>
           <td>{{task.taskDesc}}</td>
+          <td>
+            <a href=" url 'updatetask' task.id " class="btn btn-success btn-sm d-inline" >Edit</a>
+            <a href=" url 'deletetask' task.id  " class="btn btn-danger btn-sm d-inline" >Delete</a>
+          </td>
         </tr>
         {% endfor %}
       </tbody>

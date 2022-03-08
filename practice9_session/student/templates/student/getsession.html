@@ -11,26 +11,15 @@
     <h4>Session Get....</h4>
      {{name}} <hr>
 
-
-    {% for key in keys %}
-        {{key}}
-    {%endfor%} <hr>
-    <br>
-
-
-    {% for item in items %}
-    {{item}}
-    {%endfor%} <hr>
+     {{request.session.get_session_cookie_age}} <br>
+     {{request.session.get_expiry_age}} <br>
+     {{request.session.get_expiry_date}} <br>
+     {{request.session.get_expire_at_browser_close}} <br>
 
 
-    {% for key,value in items %}
-    {{key}}  {{value}} <br>
-    {%endfor%} <hr>
 
 
-    {{age}}
-
-    
+   
 
     
 </body>

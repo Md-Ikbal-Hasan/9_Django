@@ -23,6 +23,17 @@ def tasks(request):
     return render(request,'tasks.html',context)
 
 
+def delete_task(request,id):
+    pass
+
+
+def update_task(request,id):
+    if request.method=='POST':
+        pass
+    else:
+        
+
+
 def contact(request):
     if request.method=="POST":
 
