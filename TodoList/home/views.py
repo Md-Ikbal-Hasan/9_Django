@@ -30,7 +30,7 @@ def delete_task(request,id):
 def update_task(request,id):
     if request.method=='POST':
         pass
-    else:
+    
         
 
 

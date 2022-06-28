@@ -6,7 +6,10 @@
 <h1 class="text-center my-3">Login Page</h1>
 
 <form action="" method="POST">
-    {%csrf_token %} {% for fm in form %} {{fm.label_tag}} {{fm}} {{fm.errors|striptags}} <br> {%endfor%}
+    {%csrf_token %} 
+    {% for fm in form %} 
+    {{fm.label_tag}} {{fm}} {{fm.errors|striptags}} <br>
+     {%endfor%}
     <input type="submit" value="Login" class="btn btn-success btn-sm my-2">
 </form>
 

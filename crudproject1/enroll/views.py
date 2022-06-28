@@ -8,6 +8,7 @@ from .models import *     # import all models
 # Create your views here.
 
 #this function add and show student..........
+#this function add and show student..........
 def add_show(request): 
     if request.method == 'POST':
         fm = forms.StudentRegistration(request.POST)
@@ -26,6 +27,7 @@ def add_show(request):
     stud = User.objects.all()
     diction = {'form':fm  , 'stud' : stud}
     return render(request  ,'enroll/addandshow.html' , context=diction)
+
 
 
 def delete_data(requset,id):

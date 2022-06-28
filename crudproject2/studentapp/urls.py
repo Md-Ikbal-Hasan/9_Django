@@ -12,6 +12,7 @@ urlpatterns= [
     
     path('userupdate/<int:id>', views.user_info_update, name='userupdate'),
     path('userchangepass/', views.user_change_pass, name='userchangepass'),
+    
     path('addstudent/', views.addstudent, name='addstudent'),
     path('studentdetails/', views.student_details, name='studentdetails'), 
     path('updatestudent/<int:id>', views.update_student, name='updatestudent'), 

@@ -1,0 +1,129 @@
+{% extends 'base.html' %} 
+{% load static  %}
+
+{% block contentblock %}
+
+<h1 class="text-center my-3">This is Index page</h1>
+
+<!-- <form action="">
+
+    <table>
+        {{form}}
+    </table>
+
+    <input type="submit" value="Submit">
+</form> -->
+
+
+
+<!-- <form action="">
+    {{form.as_p}}
+</form> -->
+
+
+<!-- <form action="">
+    {{form.as_table}}
+</form> -->
+
+
+<!-- <form action="">
+    {{form.as_ul}}
+</form> -->
+
+<!-- <form action="">
+    {{form.name}}
+    {{form.email}}
+    {{form.password}}
+</form> -->
+
+
+<form action="" method="post">
+
+
+    <!-- {{form.as_p}} -->
+
+<!--     
+    {{form.name}}
+    {{form.email}}
+    {{form.password}}
+    {{form.roll}}
+    {{form.dept_name}}
+    {{form.subject}} <br> <br> -->
+
+    
+    <!-- <div class="form-group">
+        <label for="exampleInputPassword1">password</label>
+        {{form.password}}
+      </div> <p class="m-5"></p> -->
+
+
+
+
+      <!-- <div class="row">
+        <div class="col">
+            <label for="name">Name</label>
+            {{form.name}}
+        </div>
+        <div class="col">
+            <label for="email">Email</label>
+            {{form.email}}
+        </div>
+      </div>  <p class="m-5"></p>
+      <p class="m-5"></p> -->
+
+
+
+
+
+
+      <!-- <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="name">Name</label>
+          {{form.name}}
+        </div>
+        <div class="form-group col-md-6">
+          <label for="email">Email</label>
+          {{form.email}}
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="password">Password</label>
+          {{form.password}}
+        </div>
+        <div class="form-group col-md-6">
+          <label for="email">Roll</label>
+          {{form.roll}}
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">Department Name</label>
+        {{form.dept_name}}
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        {{form.subject}}
+      </div> -->
+
+      {{form.as_p}}
+      {%csrf_token%}
+     
+     <input type="submit" value="submit" class="btn btn-success">
+</form>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+{% endblock %}

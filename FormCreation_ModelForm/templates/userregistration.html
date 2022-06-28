@@ -1,0 +1,37 @@
+{% extends 'base.html' %} 
+{% load static  %}
+
+{% block contentblock %}
+
+<h1 class="text-center my-3">This is User Registration page</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    
+
+
+    <!-- <div class="row">
+        <div class="col">
+            <label for="name">Name</label>
+            {{form.name}}
+        </div>
+        <div class="col">
+            <label for="email">Email</label>
+            {{form.email}}
+        </div>
+      </div>  -->
+
+
+
+
+    {{form.as_p}}
+    
+
+    <input type="submit" value="Submit">
+</form>
+
+
+
+
+
+{% endblock %}
