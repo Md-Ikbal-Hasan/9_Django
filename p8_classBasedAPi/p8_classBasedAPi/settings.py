@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-t6k7$(+ex8a(bu%gly7uvk5m@s4-$4%&_8$56$2-f0k6kifh&m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ["*"] # for send data to frontend through api
+CORS_ORIGIN_ALLOW_ALL = True # for send data to frontend through api
 
 # Application definition
 
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'api',
+    'corsheaders' # for send data to frontend through api
 ]
 
 MIDDLEWARE = [
@@ -49,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware', # added
 ]
 
 ROOT_URLCONF = 'p8_classBasedAPi.urls'

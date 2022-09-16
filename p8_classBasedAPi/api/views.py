@@ -1,7 +1,7 @@
 from functools import partial
 from django.shortcuts import render
 
-from requests import Response, delete
+from requests import Response, delete  #pip install requests, befor use requests
 
 from rest_framework.response import Response
 from .models import Student
@@ -10,6 +10,12 @@ from rest_framework import status
 from rest_framework.views import APIView
 # Create your views here.
 
+"""  
+to send api data to frontend install cors = cross origin resource sharing
+pip install django-cors-headers
+
+
+"""
 
 class StudentApi(APIView):
     def get(self,request,pk=None, formate=None):
